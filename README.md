@@ -59,15 +59,21 @@ The notebook is intended for **educational purposes**.
 
 ## Running the neuroevolution
 
-The file lunarlander_salga.py is designed to be executed by SALGA.
+The file `lunarlander_salga.py` is intended to be executed using **SALGA (Simple Adaptive Learning Genetic Algorithm)**.
 
-It defines:
--The neural controller (perceptron)
--The chromosome representation
--The fitness function used by SALGA
+This script defines:
+- The chromosome representation (perceptron weights and biases)
+- The neural controller architecture
+- The fitness function, which evaluates each chromosome by running a full episode of the
+  `LunarLander-v2` environment and measuring the accumulated reward
 
-SALGA automatically searches for the optimal chromosome by repeatedly evaluating candidate solutions
-using the defined fitness function.
+When executed with SALGA, the algorithm automatically evolves a population of chromosomes
+in order to maximize the fitness score.
+After the evolutionary process finishes, the best chromosome found is printed and can be
+manually copied into the notebook to evaluate and visualize the resulting agent behavior.
+
+During evolution, environment rendering is disabled to improve performance.
+Visualization is performed separately in the notebook using the obtained chromosome.
 
 ---
 
