@@ -10,19 +10,6 @@ whose neural controller parameters are optimized using **SALGA (Simple Adaptive 
 
 ---
 
-## Repository structure
-
-.
-├── notebooks/
-│ └── Gymnasium_alumno.ipynb
-├── lunarlander_salga.py
-├── requirements.txt
-├── README.md
-└── LICENSE
-
-
----
-
 ## Project overview
 
 The goal of this project is to understand different ways of controlling an agent in a complex environment:
